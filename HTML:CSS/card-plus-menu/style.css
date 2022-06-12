@@ -12,6 +12,8 @@ body{
    align-items: center;
 }
 .card{
+    justify-content: center;
+   align-items: center;
     height: 400px;
     width: 500px;
     background-image: url(image/landscape.jpg);
@@ -19,8 +21,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
     filter: grayscale(0.5);
     cursor: pointer;
     transition: 0.3s;
@@ -79,4 +79,50 @@ body{
     visibility: visible;
     font-size: 14px;
     
+}
+
+.checkbox{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox .trace{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition:0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1){
+    top: 15px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2){
+    top: 25px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3){
+    top: 35px;
+    transform: rotate(0);
+}
+#toggle{
+    display: none;
+}
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform:rotate(45deg);
+    top: 25px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translateX(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform:rotate(-45deg);
+    top:25px
 }
