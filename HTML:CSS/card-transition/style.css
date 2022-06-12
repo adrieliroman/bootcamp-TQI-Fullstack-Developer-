@@ -44,7 +44,6 @@ body{
     opacity: 0;
     transition: 1s;
 }
-
 .card-wrapper h2{
     background-image: linear-gradient(to bottom, rgb(23, 144, 138),white);
     background-clip: text;
