@@ -41,7 +41,7 @@ h1{
     transition: .5s cubic-bezier(0.55, 0.025,0.675,0.97);
 }
 a:hover{
-    color: rgba(71, 52, 9, 0.653);
+    color: rgba(55, 39, 0, 0.846);
     background-color: white;
 }
 @keyframes backgroundTransition {
@@ -127,7 +127,10 @@ a:hover{
 }
 .menu-lista ul li a{
     margin: 10px 0;
-    color: antiquewhite;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(96, 64, 23, 0.958);
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 40px;
